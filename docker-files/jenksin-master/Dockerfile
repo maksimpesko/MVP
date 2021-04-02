@@ -14,5 +14,3 @@ ENV DOCKER_HOST=tcp://docker:2376
 VOLUME ~/jenkins_data /var/jenkins_home
 VOLUME /var/run/docker.sock /var/run/docker.sock
 VOLUME /usr/bin/docker /usr/bin/docker
-VOLUME ./configs/nodes/ ~/jenkins_data/nodes
-VOLUME ./configs/jobs/ ~/jenkins_data/jobs

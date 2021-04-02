@@ -9,6 +9,8 @@ services:
             - ~/jenkins_data:/var/jenkins_home
             - /var/run/docker.sock:/var/run/docker.sock
             - /usr/bin/docker:/usr/bin/docker
+            - ./configs/nodes/:/var/jenkins_home/nodes
+            - ./configs/jobs/:/var/jenkins_home/jobs
         ports:
             - '8080:8080'
             - '50000:50000'
@@ -33,7 +35,7 @@ services:
                     "
         ports:
             - '8081:8080'
-        image: maksimpesko/jankins-artifactory
+        image: maksimpesko/jenkins-artifactory
         networks:
             - jenkins
 
