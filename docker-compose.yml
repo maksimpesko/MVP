@@ -1,0 +1,75 @@
+version: '3.8'
+
+services:
+    jenkins:
+        container_name: jenkins-master
+        privileged: true
+        user: root
+        volumes:
+            - ~/jenkins_data:/var/jenkins_home
+            - /var/run/docker.sock:/var/run/docker.sock
+            - /usr/bin/docker:/usr/bin/docker
+        ports:
+            - '8080:8080'
+            - '50000:50000'
+        image: maksimpesko/jenkins-master
+        networks:
+            - jenkins
+    
+    artifactory:
+        container_name: jenkins-artifactory
+        restart: always
+        privileged: true
+        healthcheck:
+            test: ["CMD", "curl", "-f", "http://jenkins-master:8080/computer/jenkins-artifactory/jenkins-agent.jnlp"]
+            interval: 1m30s
+            timeout: 10s
+            retries: 3
+            start_period: 40s
+        command: bash -c "
+                    wget http://jenkins-master:8080/computer/jenkins-artifactory/jenkins-agent.jnlp &&
+                    wget http://jenkins-master:8080/jnlpJars/agent.jar &&
+                    java -jar agent.jar -jnlpUrl http://jenkins-master:8080/computer/jenkins-artifactory/jenkins-agent.jnlp -workDir "/home/jenkins" 
+                    "
+        ports:
+            - '8081:8080'
+        image: maksimpesko/jankins-artifactory
+        networks:
+            - jenkins
+
+    jenkins-slave:
+        container_name: jenkins-slave
+        restart: always
+        environment:
+            - 'JENKINS_URL=http://jenkins-master:8080'
+        image: maksimpesko/jenkins-slave
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock 
+            - /home/jenkins-slave:/home/jenkins
+        privileged: true
+        healthcheck:
+            test: ["CMD", "curl", "-f", "http://jenkins-master:8080/computer/jenkins-slave/jenkins-agent.jnlp"]
+            interval: 1m30s
+            timeout: 10s
+            retries: 3
+            start_period: 40s
+        command: bash -c "
+                    wget http://jenkins-master:8080/computer/jenkins-slave/jenkins-agent.jnlp &&
+                    wget http://jenkins-master:8080/jnlpJars/agent.jar &&
+                    java -jar agent.jar -jnlpUrl http://jenkins-master:8080/computer/jenkins-slave/jenkins-agent.jnlp -workDir "/home/jenkins" 
+                    "
+        networks:
+            - jenkins
+        depends_on:
+            - jenkins
+
+
+
+
+networks:
+    jenkins:
+        name: jenkins
+        ipam:
+            driver: default
+            config:
+            - subnet: 1.1.1.0/28
