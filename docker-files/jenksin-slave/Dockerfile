@@ -44,6 +44,4 @@ ENV CLEAN_WORKING_DIR "true"
 # Add user admin to sudoers with NOPASSWD
 RUN echo "jenkins ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
-EXPOSE 22
-
 CMD ["/usr/sbin/init"]
