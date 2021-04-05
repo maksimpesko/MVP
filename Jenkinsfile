@@ -27,8 +27,10 @@ pipeline {
         stage ('Deploy') {
             agent {node {label 'jenkins-artifactory'}}
             steps {
+                dir('/home/jenkins'){
                 unstash 'build_app'
-                sh './gradlew appRun'
+                sh 'ls -la'
+                }
             }
         }
     }
