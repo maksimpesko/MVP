@@ -28,7 +28,7 @@ pipeline {
             agent {node {label 'jenkins-artifactory'}}
             steps {
                 unstash 'build_app'
-                sh 'ls -la'
+                sh './gradlew appRun'
             }
         }
     }
