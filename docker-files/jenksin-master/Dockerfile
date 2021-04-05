@@ -1,6 +1,6 @@
 FROM jenkins/jenkins:latest
 
-RUN /usr/local/bin/install-plugins.sh git matrix-auth workflow-aggregator docker-workflow blueocean credentials-binding ssh ssh-agent ssh-slaves
+RUN /usr/local/bin/install-plugins.sh git matrix-auth workflow-aggregator docker-workflow blueocean credentials-binding ssh ssh-agent ssh-slaves job-dsl
 
 ENV JENKINS_USER "jenkins"
 ENV JENKINS_PASS "jenkins"
