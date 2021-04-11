@@ -30,7 +30,10 @@ pipeline {
                 dir('/home/jenkins'){
                 unstash 'build_app'
                 sh './gradlew appRun'
+<<<<<<< HEAD
                 sh 'curl localhost:8080/web'
+=======
+>>>>>>> 89110eac9b2129f915ea6e282a73f260e3865e1f
                 }
             }
         }
