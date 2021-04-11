@@ -29,7 +29,7 @@ pipeline {
             steps {
                 dir('/home/jenkins'){
                 unstash 'build_app'
-                sh 'ls -la'
+                sh ./gradlew appRun
                 }
             }
         }

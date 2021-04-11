@@ -3,8 +3,9 @@ version: '3.8'
 services:
     jenkins:
         container_name: jenkins-master
-        privileged: true
+        build: ./docker-files/jenksin-master/
         user: root
+        privileged: true
         volumes:
             - /home/jenkins-master:/var/jenkins_home
             - /var/run/docker.sock:/var/run/docker.sock
@@ -14,14 +15,20 @@ services:
         ports:
             - '8080:8080'
             - '50000:50000'
-        image: maksimpesko/jenkins-master
         networks:
             - jenkins
     
     artifactory:
         container_name: jenkins-artifactory
-        restart: always
+        build: ./docker-files/jenksin-artifactory/
         privileged: true
+        restart: on-failure
+        volumes:
+            - /home/jenkins-artifactory:/home/jenkins/
+        ports:
+            - '8081:8080'
+        networks:
+            - jenkins
         healthcheck:
             test: ["CMD", "curl", "-f", "http://jenkins-master:8080/computer/jenkins-artifactory/jenkins-agent.jnlp"]
             interval: 1m30s
@@ -29,28 +36,22 @@ services:
             retries: 3
             start_period: 40s
         command: bash -c "
-                    wget http://jenkins-master:8080/computer/jenkins-artifactory/jenkins-agent.jnlp &&
-                    wget http://jenkins-master:8080/jnlpJars/agent.jar &&
-                    java -jar agent.jar -jnlpUrl http://jenkins-master:8080/computer/jenkins-artifactory/jenkins-agent.jnlp -workDir "/home/jenkins" 
-                    "
-        ports:
-            - '8081:8080'
-        image: maksimpesko/jenkins-artifactory
-        networks:
-            - jenkins
-        volumes:
-            - /home/jenkins-artifactory:/var/jenkins/
-
+                        wget http://jenkins-master:8080/computer/jenkins-artifactory/jenkins-agent.jnlp &&
+                        wget http://jenkins-master:8080/jnlpJars/agent.jar &&
+                        java -jar agent.jar -jnlpUrl http://jenkins-master:8080/computer/jenkins-artifactory/jenkins-agent.jnlp -workDir "/home/jenkins" "
+                        
     jenkins-slave:
         container_name: jenkins-slave
-        restart: always
-        environment:
-            - 'JENKINS_URL=http://jenkins-master:8080'
-        image: maksimpesko/jenkins-slave
+        build: ./docker-files/jenksin-slave/
+        privileged: true
+        restart: on-failure
         volumes:
             - /var/run/docker.sock:/var/run/docker.sock 
             - /home/jenkins-slave:/home/jenkins
-        privileged: true
+        environment:
+            - 'JENKINS_URL=http://jenkins-master:8080'
+        networks:
+            - jenkins
         healthcheck:
             test: ["CMD", "curl", "-f", "http://jenkins-master:8080/computer/jenkins-slave/jenkins-agent.jnlp"]
             interval: 1m30s
@@ -58,17 +59,9 @@ services:
             retries: 3
             start_period: 40s
         command: bash -c "
-                    wget http://jenkins-master:8080/computer/jenkins-slave/jenkins-agent.jnlp &&
-                    wget http://jenkins-master:8080/jnlpJars/agent.jar &&
-                    java -jar agent.jar -jnlpUrl http://jenkins-master:8080/computer/jenkins-slave/jenkins-agent.jnlp -workDir "/home/jenkins" 
-                    "
-        networks:
-            - jenkins
-        depends_on:
-            - jenkins
-
-
-
+                        wget http://jenkins-master:8080/computer/jenkins-slave/jenkins-agent.jnlp &&
+                        wget http://jenkins-master:8080/jnlpJars/agent.jar &&
+                        java -jar agent.jar -jnlpUrl http://jenkins-master:8080/computer/jenkins-slave/jenkins-agent.jnlp -workDir "/home/jenkins" "
 
 networks:
     jenkins:

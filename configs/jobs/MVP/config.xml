@@ -51,13 +51,16 @@
         stage (&apos;Deploy&apos;) {
             agent {node {label &apos;jenkins-artifactory&apos;}}
             steps {
+                dir(&apos;/home/jenkins&apos;){
                 unstash &apos;build_app&apos;
-                sh &apos;./gradlew appRun&apos;
+                sh ./gradlew appRun
+                }
             }
         }
     }
 
-}</script>
+}
+</script>
     <sandbox>true</sandbox>
   </definition>
   <triggers/>

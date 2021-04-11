@@ -18,7 +18,3 @@ ENV SLAVE_LABELS "jenkins-slave"
 ENV SLAVE_WORING_DIR "/home/jenkins"
 ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false
 ENV DOCKER_HOST=tcp://docker:2376
-
-VOLUME /home/jenkins-master /var/jenkins_home
-VOLUME /var/run/docker.sock /var/run/docker.sock
-VOLUME /usr/bin/docker /usr/bin/docker

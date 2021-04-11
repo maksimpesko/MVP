@@ -1,0 +1,222 @@
+Started by user unknown or anonymous
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4F+hgRuoFLFDF2hitsgR2hRRL6JRqjuK56/pcxRd3xq2AAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4C3W2CA2i2sJ04ml7gua6+qe3PD/x+fFeuv/d78nODjGAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4KrQyRJtnriGQpzDoagtNobLZRe6WA+i4omvclMB7aYYAAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgYJ/eT83ILSktQi/azUvOzMvGLd4pzEslR9AD5U8v/NAAAA[0mjenkins-slave in /home/jenkins/workspace/MVP
+[8mha:////4OJ8+4xXFrPGgP1GfWv63Zzwwlvf3V2SmrHp6GC34f4YAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4C+xfMILgut42vVCwKD3n03l8g+UiwZ0HcFKMvYh2/kkAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4LgTPlBTgYZKwd2RyBXQD9HqsXdrc2/ptcaieFIc9VsTAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Checkout project repository)
+[8mha:////4MFSfKs7u+/UEPo4YCNxZM7XUFk/DNBVINiIBYqnWCSDAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] git
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/artsiompeshko/java-build-tools.git
+ > git init /home/jenkins/workspace/MVP # timeout=10
+Fetching upstream changes from https://github.com/artsiompeshko/java-build-tools.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git fetch --tags --force --progress -- https://github.com/artsiompeshko/java-build-tools.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+Checking out Revision 080c90ad97fafd3ceb29b634ab9b509e0ee80b4a (refs/remotes/origin/main)
+ > git config remote.origin.url https://github.com/artsiompeshko/java-build-tools.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 080c90ad97fafd3ceb29b634ab9b509e0ee80b4a # timeout=10
+ > git branch -a -v --no-abbrev # timeout=10
+ > git checkout -b main 080c90ad97fafd3ceb29b634ab9b509e0ee80b4a # timeout=10
+Commit message: "Merge pull request #2 from artsiompeshko/build-tools"
+ > git rev-list --no-walk 080c90ad97fafd3ceb29b634ab9b509e0ee80b4a # timeout=10
+[8mha:////4CSzbjEBnNC2AkRx37If92Gx6mBTyoE0PI4Z5G+rY+reAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
+[8mha:////4ELPtEjaagmblXuyNw2WMHdirP4x4fP+FgpjgmTDtH8SAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
+[8mha:////4FJxqAw2AFi0Xs08qljVG7RhBbWGBWVkEhdp2du84k6WAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] stage
+[8mha:////4MB9GLo47bWABAVVU9/oJF21DQJIOiB9jRMKVZKoiVYsAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] { (Execute unit tests)
+[8mha:////4EJPawBZAdQFcXwNhIVIYHGwF3jucl88iEAZPn6gKgLRAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggysXWsbBkaT4AJIoT5nwCRVJ7Iq3kH0cxYucXOvm3e8wXrGOBIQTOrcDAYO8O8m3RZLFMYro4ys3RhHWEkp5hQWVCvTgsKSgqWVDWsOGwUdo6iQZ1gy628y8ZJ1M05hfIdONSmH+EBFS/mJEP6whxgd5v6SPjz/BXA7BPUbfupvX8DpQJrNb4AAAA=[0m[Pipeline] sh
++ chmod +x gradlew
+[8mha:////4I9U/34T31wf3xl+7L7UxPwLuKHB29a9jjaoawYTeEKJAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggyGUvHypah8QSYIEKY/wkQSeWJvJp3EM2MlVvs7NvmPV+wjgGOFDSzCgeDsTPMu0mXxTKF4eooM0sX1hFGcooJlQX16rSgoKRgSVXDisNGYecoGtQJttzKu2ycRN2cUyjfgUNt+hEeUPFiTjKkL8wBdrepj4Q/z18BzD5B3baf2vs35DNwLL4AAAA=[0m[Pipeline] sh
++ ./gradlew test
+Downloading https://services.gradle.org/distributions/gradle-6.7.1-bin.zip
+.........10%..........20%..........30%..........40%..........50%.........60%..........70%..........80%..........90%..........100%
+
+Welcome to Gradle 6.7.1!
+
+Here are the highlights of this release:
+ - File system watching is ready for production use
+ - Declare the version of Java your build requires
+ - Java 15 support
+
+For more details see https://docs.gradle.org/6.7.1/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+> Task :utils:compileJava
+> Task :utils:processResources
+> Task :utils:classes
+> Task :utils:jar
+> Task :services:compileJava
+> Task :services:processResources
+> Task :services:classes
+> Task :services:jar
+> Task :admin:compileJava
+> Task :admin:processResources
+> Task :admin:classes
+
+> Task :admin:compileTestJava
+Note: /home/jenkins/workspace/MVP/admin/src/test/java/com/builders/admin/AdminEntryPointTest.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :admin:processTestResources
+> Task :admin:testClasses
+> Task :admin:test
+
+> Task :services:compileTestJava
+Note: /home/jenkins/workspace/MVP/services/src/test/java/com/builders/services/BuilderServiceTest.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :services:processTestResources
+> Task :services:testClasses
+> Task :services:test
+
+> Task :utils:compileTestJava
+Note: /home/jenkins/workspace/MVP/utils/src/test/java/com/builders/utils/BuildersUtilTest.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :utils:processTestResources
+> Task :utils:testClasses
+> Task :utils:test
+> Task :web:compileJava
+> Task :web:processResources
+> Task :web:classes
+
+> Task :web:compileTestJava
+Note: /home/jenkins/workspace/MVP/web/src/test/java/com/builders/web/HelloServletTest.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :web:processTestResources
+> Task :web:testClasses
+> Task :web:test
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 2m 13s
+22 actionable tasks: 22 executed
+[8mha:////4JoHt5JXrjRBuM49WInTk106a22Jjod84o2RBo1/xPD/AAAApB+LCAAAAAAAAP9tjbEOwiAURV9rHFwd/QiaJm7GyZWw+AXYIkLJexSodPKL/DX/QbSJk3e4uecu5/mCdQxwpKCZVTgYjJ1h3k26LJYpDFdHmVm6sI4wklNMqCyoV6cFBSUFS6oaVhw2CjtH0aBOsOVW3mXjJOrmnEL5Dhxq04/wgIoXc5IhfWEOsLtNfST8ef4KYPY+Qd3uP9W+ATnVfPq+AAAA[0m[Pipeline] }
+[8mha:////4I4/B/lmgGJfF3tCQR70CsuaTUUOcioN+UwWH1gD8Fc4AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICBRWiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nbf2r7Bgo2J0a+AAAA[0m[Pipeline] // stage
+[8mha:////4CijuSNvjoG/frgcXvfafG7IeYHggRvvQ2oUShWQ1kRcAAAApx+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjJESDqGgtN7zAxMY4se6CfSGpeBFf4w8EIlGx1c5Kq3m+oMwJDpS8bBy2AXMdZBd7PzU5UGovkQbZ0FnWhJmik9oNmqw7zqiJHcwRBSwULB3WkXJAz7BSjbmbKhr01YnTtO0VFMHe4AFCTWY2ib8wJlhfe5sJf56/Ahg7BrFlKDa7z7F8A6sHc4fBAAAA[0m[Pipeline] stage
+[8mha:////4IuyIP4hnRAN+U+eIP35C06pTZnRZ9AZ3ujQsS4sy1wAAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohULDAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD1+IXOLCAAAA[0m[Pipeline] { (Prepare build artifact)
+[8mha:////4Li287awsLtCds3KSi6Hfz5/WG736BUtYPDOvi1uCqsgAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKpAQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHNxXfVKy+AAAA[0m[Pipeline] sh
++ ./gradlew build
+> Task :utils:compileJava UP-TO-DATE
+> Task :utils:processResources UP-TO-DATE
+> Task :utils:classes UP-TO-DATE
+> Task :utils:jar UP-TO-DATE
+> Task :services:compileJava UP-TO-DATE
+> Task :services:processResources UP-TO-DATE
+> Task :services:classes UP-TO-DATE
+> Task :services:jar UP-TO-DATE
+> Task :admin:compileJava UP-TO-DATE
+> Task :admin:processResources UP-TO-DATE
+> Task :admin:classes UP-TO-DATE
+> Task :admin:jar
+> Task :admin:assemble
+> Task :admin:compileTestJava UP-TO-DATE
+> Task :admin:processTestResources UP-TO-DATE
+> Task :admin:testClasses UP-TO-DATE
+> Task :admin:test UP-TO-DATE
+> Task :admin:check UP-TO-DATE
+> Task :admin:build
+> Task :services:assemble UP-TO-DATE
+> Task :services:compileTestJava UP-TO-DATE
+> Task :services:processTestResources UP-TO-DATE
+> Task :services:testClasses UP-TO-DATE
+> Task :services:test UP-TO-DATE
+> Task :services:check UP-TO-DATE
+> Task :services:build UP-TO-DATE
+> Task :utils:assemble UP-TO-DATE
+> Task :utils:compileTestJava UP-TO-DATE
+> Task :utils:processTestResources UP-TO-DATE
+> Task :utils:testClasses UP-TO-DATE
+> Task :utils:test UP-TO-DATE
+> Task :utils:check UP-TO-DATE
+> Task :utils:build UP-TO-DATE
+> Task :web:compileJava UP-TO-DATE
+> Task :web:processResources UP-TO-DATE
+> Task :web:classes UP-TO-DATE
+> Task :web:war
+> Task :web:assemble
+> Task :web:compileTestJava UP-TO-DATE
+> Task :web:processTestResources UP-TO-DATE
+> Task :web:testClasses UP-TO-DATE
+> Task :web:test UP-TO-DATE
+> Task :web:check UP-TO-DATE
+> Task :web:build
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 2s
+24 actionable tasks: 2 executed, 22 up-to-date
+[8mha:////4ME+IIhN74z6j7n85Zo1frUMBgTO23d4svMcxBZDH375AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKoQQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN1TuT7W+AAAA[0m[Pipeline] stash
+Stashed 161 file(s)
+[8mha:////4PKzLlneIwc1yxUlkIy8Ty268mFmBUU28X5sr1x0+sJnAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICNBQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AGHKGa5vgAAAA==[0m[Pipeline] }
+[8mha:////4CkVMkuCzgUjKbW+1qkXL8RLsasK0cTVOLQNGVBzUNYKAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiUNAgqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3da768AG0yz0FvgAAAA==[0m[Pipeline] // stage
+[8mha:////4DPU+GBMGNc13lobp03bxC75U/QGzDWZsLMPkW6CC/eYAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BKWgpeYQjRXSIitZywwtMbIwT6y7YF5KKF/E1/oAhEhVb7ay0mucLqhThQNGJzmLvMbVeDGF0uYmJYn8JNImOzqIlTBSsUHZSZOxxQUVsYUlRwkrC2mIbKHl0DBvZ6buug0ZXnzjmbS+h9OYGDyhkNrOO/IU5wvY6mkT48/wVwDwwFDuGsmk+x+oNIF8KLcEAAAA=[0m[Pipeline] stage
+[8mha:////4CDQ7iCslBmap5lnCkUfe+/OhBDVBMNouC1GXvZS3clXAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUKiNiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPpnFij8IAAAA=[0m[Pipeline] { (Deploy)
+[8mha:////4KXNOZujwSG48x4to6KJFa5PK6V5PNXMC20hvcnCaTdeAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUAjbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAd6e6VPCAAAA[0m[Pipeline] node
+Running on [8mha:////4CN7um2kdTQGzHeqih+MtmzWIFUQmfEJyF7ZcM/giNIyAAAAqh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzhEgY5/eT83ILSktQi/azUvOzMvGLdxKKSzLTE5JL8okp9AKeLliDTAAAA[0mjenkins-artifactory in /home/jenkins/workspace/MVP
+[8mha:////4Et+/O6r+fjhIJRu4LiMPYWRWVKnBJrV7x+RkxVR094SAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUQjAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/hYjrHCAAAA[0m[Pipeline] {
+[8mha:////4P5kEbYt3z7tl28sye2XxKlPK7zRhVXYcDYJX1drost0AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIUGDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAEIWoEpvgAAAA==[0m[Pipeline] unstash
+[8mha:////4PJZ5tl14fq+kyoZRd0I6/7vrC5ZwqQxp061XAchZVz+AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiISEKRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYMpTb3af24Q1Ja5owvgAAAA==[0m[Pipeline] sh
++ ./gradlew appRun
+Downloading https://services.gradle.org/distributions/gradle-6.7.1-bin.zip
+.........10%..........20%..........30%..........40%..........50%.........60%..........70%..........80%..........90%..........100%
+
+Welcome to Gradle 6.7.1!
+
+Here are the highlights of this release:
+ - File system watching is ready for production use
+ - Declare the version of Java your build requires
+ - Java 15 support
+
+For more details see https://docs.gradle.org/6.7.1/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+> Task :web:prepareInplaceWebAppFolder
+> Task :web:createInplaceWebAppFolder
+> Task :utils:compileJava
+> Task :utils:processResources
+> Task :utils:classes
+> Task :utils:jar
+> Task :services:compileJava
+> Task :services:processResources
+> Task :services:classes
+> Task :services:jar
+> Task :web:compileJava
+> Task :web:processResources
+> Task :web:classes
+> Task :web:prepareInplaceWebAppClasses
+> Task :web:prepareInplaceWebApp
+17:19:46 WARN  Ignoring deprecated socket close linger time
+17:19:47 INFO  Jetty 9.4.24.v20191120 started and listening on port 8080
+17:19:47 INFO  web runs at:
+17:19:47 INFO    http://localhost:8080/web
+
+> Task :web:appRun
+Press any key to stop the server.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.7.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 2m 37s
+11 actionable tasks: 11 executed
+[8mha:////4CAUv+BF2gxpBSBpaAzE9yqG3btGskJKpRUnlomkTF9TAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiISEhIaq0lhteYGJjnFh3xnZIKl7E1/gDgUhUbLHa2WaeL1imCEeOFltDnaPUOAy+t9PCgWN38Txgy2dsmBJ7g9IMkrWpZ5ScDcwpSlgIWBlqPCdHNsNatOquKq/IVqccp+8goHT6Bg8oxGTOKuYvjBE2114npp/nrwDGEDKU2/2ndm8FmBaQvgAAAA==[0m[Pipeline] }
+[8mha:////4GxPypySuaiJk9jlpMmszDpGbBE7KIhe/mKEZ3CdpqvjAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIRqEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQE2e00svgAAAA==[0m[Pipeline] // node
+[8mha:////4NU76M6qj/xIorIG+OztgX/3frBax1sxkdvQv1tCMgL/AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCSImo0lppeIGJjXFi3RnbIal4EV/jD1hEomKL1c4283rDOgY4cTDYaxosxc6id6PJCycOw9XxhD1fsGOK7DS2empZ6WbBlpOGJUUJKwEbTZ3jaMkk2IpePmTlJJnqnEL+jgJKq+7whEJkc5IhfWEOsLuNKjL9PH8FMHufoKz3uQ71B+m0UTO+AAAA[0m[Pipeline] }
+[8mha:////4KF1DPWv1NpFmKYGHHg8uOy/+i9175bzD3/tncE9KDGGAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRoURUaa00vMDEh3Fi3RnbIal4EV/jD1hEomKL1c4283rDOgY4cTCiRxosxc4K70aTl5g4DFfHk+j5IjqmyA5Fi1PLGpsFW04IS4oSVhI2SJ3jaMkk2MpePVTlFJnqnEL+jhJKq+/whEJmc1IhfWEOsLuNOjL9PH8FMHufoDzsc9X1B9pXCo++AAAA[0m[Pipeline] // stage
+[8mha:////4HqDJAUx1Ca7R5NSRBEuX2ZXBHmfkndl5wbIT4cLmj98AAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRgA5R0VppeIFJjHFi3QX7QlLxIr7GH4iIRMVWO9PM641lijhydKqx1HpKlVdd6N301MCxvQYeVMMXVTElDlaVdii5tqcZSxaLeVmOhcbKUhU4eXKCtW7MwxTBkCvOEid30Mh9fccTmZ7KYqJ8YYzY3Po6Mf06fwMYu06Q77aCbP8B7tlN5b0AAAA=[0m[Pipeline] }
+[8mha:////4Mxjzxx+dv+1wx0r/jx8rF05w7jK7lXqnkxVV410I2GzAAAAoh+LCAAAAAAAAP9tjTESgjAQRT84FraWHiIUlI6VbYbGE0SIMZDZhWQRKk/k1byDjMxY+av/XvNeb2xTxImjU62lzlOqverD6JanJo7dLfCkWr6qmilxsKqyU8WNPa9YsVisy3JsNHaW6sDJkxPsdWsepgiGXHGRuLijRu6bAU9keimLifKFOeJwH5vE9Ov8DWDue0FeloKs/AD9ZUlGvQAAAA==[0m[Pipeline] // node
+[8mha:////4BNes9fQm9D4Mfc/a2qmb/TfynDWlNx52+3iDQSuYgLqAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRgA5R0VppeIFJjHFi3QX7QlLxIr7GH4iIRMVWO9PM641lijhydKqx1HpKlVdd6N301MCxvQYeVMMXVTElDlaVdii5tqcZSxaLeVmOhcbKUhU4eXKCtW7MwxTBkCvOEid30Mh9fccTmZ7KYqJ8YYzY3Po6Mf06fwMYu06Q7/aCbPsBe4lug70AAAA=[0m[Pipeline] End of Pipeline
+Finished: SUCCESS
