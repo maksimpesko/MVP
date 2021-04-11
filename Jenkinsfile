@@ -24,15 +24,14 @@ pipeline {
                 stash includes: '**', name: 'build_app'
             }
         }
-        stage ('Deploy') {
+        stage ('Build') {
             agent {node {label 'jenkins-artifactory'}}
             steps {
                 dir('/home/jenkins'){
                 unstash 'build_app'
-                sh ./gradlew appRun
+                sh './gradlew appRun'
                 }
             }
         }
     }
-
 }
